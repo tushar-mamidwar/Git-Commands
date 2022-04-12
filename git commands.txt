@@ -1,0 +1,73 @@
+*git commands
+
+git init					#initialize empty git repository in other words convert current directory to git repository
+
+git add <file names>				#add files to the staging area
+						 	 -in file names we can use patterns like 
+						     	 -*.txt will add all txt files
+						       - . will add entire directory recursively
+						
+
+git commit -m "comment"				#commit all the files in staging area
+						 	
+
+git status					#shows status of the working directory and staging area
+
+
+
+
+
+git remote add origin <link>			#adds a link
+
+git remote set-url origin <link>		#changes the link of origin
+
+git clone <link>
+
+git pull origin <branch>
+
+git push origin <branch>
+
+git branch -m <old name> <new name>            # changes the name of the branch 
+git branch							  # Shows all the branches present
+git branch <branchname>				  # Creates new branch
+git branch -d <branchname>				  # deletes the branch
+
+git checkout <branchname>				  # goes to that particular branch
+
+git merge <branchname>					  # merges <branchname> with the current branch
+
+
+*normal bash/terminal commands
+
+mkdir <directory name>
+
+cd <directory name>
+
+ls -a                                       # -a for all
+
+echo <file content> > filename 		    #write something in given file
+					     -instead of > if we use >> this means append
+
+
+* configurations
+
+git --version     #check version of git
+
+git config --global user.name "Tushar Mamidwar"      	#change the setting at gloabal level and set the name
+											-name is written in double inverted 									 											comma becasue there is a space in betweeen
+
+git config --global user.email s19_mamdiwar_tushar@mgmcen.ac.in
+
+git config --global core.editor "code --wait"         #code means vs code
+									- If we use wait flag the terminal will wait until the vs code is closed
+ 
+git config --global -e   			      #edit all global setting
+
+git config --global core.autocrlf true		      #this is the setting for handling end of lines.
+									-crlf=carriage return line feed (\r \n)
+									-set the settings to 
+							  		true for windows
+							  		input for mac and linux
+
+git config -h                                          #for help
+                       
